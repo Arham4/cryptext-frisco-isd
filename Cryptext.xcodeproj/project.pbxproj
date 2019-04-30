@@ -14,6 +14,7 @@
 		AFE27E262271F3CA00C33CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE27E252271F3CA00C33CDD /* Assets.xcassets */; };
 		AFE27E292271F3CA00C33CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE27E272271F3CA00C33CDD /* LaunchScreen.storyboard */; };
 		AFE27E312271F91000C33CDD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE27E302271F91000C33CDD /* GoogleService-Info.plist */; };
+		AFE27E33227201F600C33CDD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE27E32227201F600C33CDD /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		AFE27E282271F3CA00C33CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE27E2A2271F3CA00C33CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE27E302271F91000C33CDD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFE27E32227201F600C33CDD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		C6B47652C8B4A3511D9829CE /* Pods-Cryptext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptext.release.xcconfig"; path = "Target Support Files/Pods-Cryptext/Pods-Cryptext.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +81,7 @@
 				AFE27E272271F3CA00C33CDD /* LaunchScreen.storyboard */,
 				AFE27E2A2271F3CA00C33CDD /* Info.plist */,
 				AFE27E302271F91000C33CDD /* GoogleService-Info.plist */,
+				AFE27E32227201F600C33CDD /* Login.storyboard */,
 			);
 			path = Cryptext;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				AFE27E292271F3CA00C33CDD /* LaunchScreen.storyboard in Resources */,
 				AFE27E312271F91000C33CDD /* GoogleService-Info.plist in Resources */,
 				AFE27E262271F3CA00C33CDD /* Assets.xcassets in Resources */,
+				AFE27E33227201F600C33CDD /* Login.storyboard in Resources */,
 				AFE27E242271F3C800C33CDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
