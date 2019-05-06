@@ -7,128 +7,207 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5334A2F3D8EFB91FE702CAC0 /* Pods_Cryptext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD2133791E80A97F12115AA /* Pods_Cryptext.framework */; };
-		AFE27E1F2271F3C800C33CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE27E1E2271F3C800C33CDD /* AppDelegate.swift */; };
-		AFE27E212271F3C800C33CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE27E202271F3C800C33CDD /* ViewController.swift */; };
-		AFE27E242271F3C800C33CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE27E222271F3C800C33CDD /* Main.storyboard */; };
-		AFE27E262271F3CA00C33CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFE27E252271F3CA00C33CDD /* Assets.xcassets */; };
-		AFE27E292271F3CA00C33CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFE27E272271F3CA00C33CDD /* LaunchScreen.storyboard */; };
-		AFE27E312271F91000C33CDD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE27E302271F91000C33CDD /* GoogleService-Info.plist */; };
+		34F8440EF8E6646E999AE6EA /* Pods_Cryptext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E166ABAFB310D780AD251B0 /* Pods_Cryptext.framework */; };
+		481A352C20A8E6DC008CD16B /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481A352B20A8E6DC008CD16B /* UIImage+Additions.swift */; };
+		481A352E20A8E956008CD16B /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481A352D20A8E956008CD16B /* UICollectionView+Additions.swift */; };
+		4859774D20A689C700429CB3 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859774C20A689C700429CB3 /* AppSettings.swift */; };
+		4859775020A68AF800429CB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859774E20A68AF800429CB3 /* LoginViewController.swift */; };
+		4859775120A68AF800429CB3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4859774F20A68AF800429CB3 /* LoginViewController.xib */; };
+		4859775320A68B1C00429CB3 /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859775220A68B1C00429CB3 /* ChannelsViewController.swift */; };
+		4859775520A68BF500429CB3 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859775420A68BF500429CB3 /* AppController.swift */; };
+		4859775720A68C6F00429CB3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859775620A68C6F00429CB3 /* NavigationController.swift */; };
+		4859775A20A68CAC00429CB3 /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859775920A68CAC00429CB3 /* UIColor+Additions.swift */; };
+		4859775E20A69CD500429CB3 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859775D20A69CD500429CB3 /* UIView+Additions.swift */; };
+		4859776020A7993F00429CB3 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859775F20A7993F00429CB3 /* Channel.swift */; };
+		4859776420A7A1BD00429CB3 /* DatabaseRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859776320A7A1BD00429CB3 /* DatabaseRepresentation.swift */; };
+		4859776620A7AD3800429CB3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859776520A7AD3800429CB3 /* ChatViewController.swift */; };
+		4859776820A7D34400429CB3 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859776720A7D34400429CB3 /* Message.swift */; };
+		48AC74C720A66C2A00AA1788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AC74C620A66C2A00AA1788 /* AppDelegate.swift */; };
+		48AC74CE20A66C2C00AA1788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AC74CD20A66C2C00AA1788 /* Assets.xcassets */; };
+		48AC74D120A66C2C00AA1788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48AC74CF20A66C2C00AA1788 /* LaunchScreen.storyboard */; };
+		AFE761AC227B2BEF008128FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE761AB227B2BEF008128FE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		118DEB8C7872420C8CD175BB /* Pods-Cryptext.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptext.debug.xcconfig"; path = "Target Support Files/Pods-Cryptext/Pods-Cryptext.debug.xcconfig"; sourceTree = "<group>"; };
-		4BD2133791E80A97F12115AA /* Pods_Cryptext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cryptext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFE27E1B2271F3C800C33CDD /* Cryptext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptext.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFE27E1E2271F3C800C33CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFE27E202271F3C800C33CDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AFE27E232271F3C800C33CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AFE27E252271F3CA00C33CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AFE27E282271F3CA00C33CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AFE27E2A2271F3CA00C33CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFE27E302271F91000C33CDD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C6B47652C8B4A3511D9829CE /* Pods-Cryptext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptext.release.xcconfig"; path = "Target Support Files/Pods-Cryptext/Pods-Cryptext.release.xcconfig"; sourceTree = "<group>"; };
+		481A352B20A8E6DC008CD16B /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
+		481A352D20A8E956008CD16B /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
+		4859774C20A689C700429CB3 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		4859774E20A68AF800429CB3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4859774F20A68AF800429CB3 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4859775220A68B1C00429CB3 /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
+		4859775420A68BF500429CB3 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		4859775620A68C6F00429CB3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		4859775920A68CAC00429CB3 /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
+		4859775D20A69CD500429CB3 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		4859775F20A7993F00429CB3 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		4859776320A7A1BD00429CB3 /* DatabaseRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseRepresentation.swift; sourceTree = "<group>"; };
+		4859776520A7AD3800429CB3 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		4859776720A7D34400429CB3 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		48AC74C320A66C2A00AA1788 /* Cryptext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptext.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48AC74C620A66C2A00AA1788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		48AC74CD20A66C2C00AA1788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48AC74D020A66C2C00AA1788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48AC74D220A66C2C00AA1788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5931E1A01874AC5A09FB7B2F /* Pods-Cryptext.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptext.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cryptext/Pods-Cryptext.debug.xcconfig"; sourceTree = "<group>"; };
+		839AB40B33A00B447102F67D /* Pods-Cryptext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptext.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cryptext/Pods-Cryptext.release.xcconfig"; sourceTree = "<group>"; };
+		8E166ABAFB310D780AD251B0 /* Pods_Cryptext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cryptext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFE761AB227B2BEF008128FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AFE27E182271F3C800C33CDD /* Frameworks */ = {
+		48AC74C020A66C2A00AA1788 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5334A2F3D8EFB91FE702CAC0 /* Pods_Cryptext.framework in Frameworks */,
+				34F8440EF8E6646E999AE6EA /* Pods_Cryptext.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F98F36A630922B5D64B7017 /* Pods */ = {
+		27078574AC22DE5EDD982EC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				118DEB8C7872420C8CD175BB /* Pods-Cryptext.debug.xcconfig */,
-				C6B47652C8B4A3511D9829CE /* Pods-Cryptext.release.xcconfig */,
+				8E166ABAFB310D780AD251B0 /* Pods_Cryptext.framework */,
 			);
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		AFE27E122271F3C800C33CDD = {
+		4859775820A68C9B00429CB3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				AFE27E1D2271F3C800C33CDD /* Cryptext */,
-				AFE27E1C2271F3C800C33CDD /* Products */,
-				0F98F36A630922B5D64B7017 /* Pods */,
-				DC43D14D324741550DC24AFB /* Frameworks */,
+				481A352D20A8E956008CD16B /* UICollectionView+Additions.swift */,
+				4859775920A68CAC00429CB3 /* UIColor+Additions.swift */,
+				481A352B20A8E6DC008CD16B /* UIImage+Additions.swift */,
+				4859775D20A69CD500429CB3 /* UIView+Additions.swift */,
 			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		AFE27E1C2271F3C800C33CDD /* Products */ = {
+		48AC74BA20A66C2A00AA1788 = {
 			isa = PBXGroup;
 			children = (
-				AFE27E1B2271F3C800C33CDD /* Cryptext.app */,
+				48AC74C520A66C2A00AA1788 /* Cryptext */,
+				48AC74C420A66C2A00AA1788 /* Products */,
+				6EDC27F561A43516D3AEBF14 /* Pods */,
+				27078574AC22DE5EDD982EC5 /* Frameworks */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		48AC74C420A66C2A00AA1788 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48AC74C320A66C2A00AA1788 /* Cryptext.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AFE27E1D2271F3C800C33CDD /* Cryptext */ = {
+		48AC74C520A66C2A00AA1788 /* Cryptext */ = {
 			isa = PBXGroup;
 			children = (
-				AFE27E1E2271F3C800C33CDD /* AppDelegate.swift */,
-				AFE27E202271F3C800C33CDD /* ViewController.swift */,
-				AFE27E222271F3C800C33CDD /* Main.storyboard */,
-				AFE27E252271F3CA00C33CDD /* Assets.xcassets */,
-				AFE27E272271F3CA00C33CDD /* LaunchScreen.storyboard */,
-				AFE27E2A2271F3CA00C33CDD /* Info.plist */,
-				AFE27E302271F91000C33CDD /* GoogleService-Info.plist */,
+				48AC74DA20A66C9700AA1788 /* Controllers */,
+				4859775820A68C9B00429CB3 /* Extensions */,
+				48AC74D920A66C8600AA1788 /* Models */,
+				48AC74DC20A66CB800AA1788 /* Supporting Files */,
+				48AC74D820A66C7A00AA1788 /* View Controllers */,
 			);
 			path = Cryptext;
 			sourceTree = "<group>";
 		};
-		DC43D14D324741550DC24AFB /* Frameworks */ = {
+		48AC74D820A66C7A00AA1788 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4BD2133791E80A97F12115AA /* Pods_Cryptext.framework */,
+				4859775220A68B1C00429CB3 /* ChannelsViewController.swift */,
+				4859776520A7AD3800429CB3 /* ChatViewController.swift */,
+				4859774E20A68AF800429CB3 /* LoginViewController.swift */,
+				4859774F20A68AF800429CB3 /* LoginViewController.xib */,
+				4859775620A68C6F00429CB3 /* NavigationController.swift */,
 			);
-			name = Frameworks;
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		48AC74D920A66C8600AA1788 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4859775F20A7993F00429CB3 /* Channel.swift */,
+				4859776320A7A1BD00429CB3 /* DatabaseRepresentation.swift */,
+				4859776720A7D34400429CB3 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48AC74DA20A66C9700AA1788 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4859775420A68BF500429CB3 /* AppController.swift */,
+				48AC74C620A66C2A00AA1788 /* AppDelegate.swift */,
+				4859774C20A689C700429CB3 /* AppSettings.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		48AC74DC20A66CB800AA1788 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFE761AB227B2BEF008128FE /* GoogleService-Info.plist */,
+				48AC74CD20A66C2C00AA1788 /* Assets.xcassets */,
+				48AC74D220A66C2C00AA1788 /* Info.plist */,
+				48AC74CF20A66C2C00AA1788 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EDC27F561A43516D3AEBF14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5931E1A01874AC5A09FB7B2F /* Pods-Cryptext.debug.xcconfig */,
+				839AB40B33A00B447102F67D /* Pods-Cryptext.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AFE27E1A2271F3C800C33CDD /* Cryptext */ = {
+		48AC74C220A66C2A00AA1788 /* Cryptext */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFE27E2D2271F3CA00C33CDD /* Build configuration list for PBXNativeTarget "Cryptext" */;
+			buildConfigurationList = 48AC74D520A66C2C00AA1788 /* Build configuration list for PBXNativeTarget "Cryptext" */;
 			buildPhases = (
-				00E6CF9DAB907CB7474E0465 /* [CP] Check Pods Manifest.lock */,
-				AFE27E172271F3C800C33CDD /* Sources */,
-				AFE27E182271F3C800C33CDD /* Frameworks */,
-				AFE27E192271F3C800C33CDD /* Resources */,
-				702C97E5C37BA945760DF72E /* [CP] Embed Pods Frameworks */,
+				CEB9431455C293FFAFA59FB6 /* [CP] Check Pods Manifest.lock */,
+				48AC74BF20A66C2A00AA1788 /* Sources */,
+				48AC74C020A66C2A00AA1788 /* Frameworks */,
+				48AC74C120A66C2A00AA1788 /* Resources */,
+				DB8BF612B22951ED6C0E794A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Cryptext;
-			productName = Cryptext;
-			productReference = AFE27E1B2271F3C800C33CDD /* Cryptext.app */;
+			productName = RWRC;
+			productReference = 48AC74C320A66C2A00AA1788 /* Cryptext.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AFE27E132271F3C800C33CDD /* Project object */ = {
+		48AC74BB20A66C2A00AA1788 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Siddiqui, Arham J";
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Razeware;
 				TargetAttributes = {
-					AFE27E1A2271F3C800C33CDD = {
-						CreatedOnToolsVersion = 10.1;
+					48AC74C220A66C2A00AA1788 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
-			buildConfigurationList = AFE27E162271F3C800C33CDD /* Build configuration list for PBXProject "Cryptext" */;
+			buildConfigurationList = 48AC74BE20A66C2A00AA1788 /* Build configuration list for PBXProject "Cryptext" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,45 +215,41 @@
 				en,
 				Base,
 			);
-			mainGroup = AFE27E122271F3C800C33CDD;
-			productRefGroup = AFE27E1C2271F3C800C33CDD /* Products */;
+			mainGroup = 48AC74BA20A66C2A00AA1788;
+			productRefGroup = 48AC74C420A66C2A00AA1788 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFE27E1A2271F3C800C33CDD /* Cryptext */,
+				48AC74C220A66C2A00AA1788 /* Cryptext */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AFE27E192271F3C800C33CDD /* Resources */ = {
+		48AC74C120A66C2A00AA1788 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE27E292271F3CA00C33CDD /* LaunchScreen.storyboard in Resources */,
-				AFE27E312271F91000C33CDD /* GoogleService-Info.plist in Resources */,
-				AFE27E262271F3CA00C33CDD /* Assets.xcassets in Resources */,
-				AFE27E242271F3C800C33CDD /* Main.storyboard in Resources */,
+				4859775120A68AF800429CB3 /* LoginViewController.xib in Resources */,
+				AFE761AC227B2BEF008128FE /* GoogleService-Info.plist in Resources */,
+				48AC74D120A66C2C00AA1788 /* LaunchScreen.storyboard in Resources */,
+				48AC74CE20A66C2C00AA1788 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00E6CF9DAB907CB7474E0465 /* [CP] Check Pods Manifest.lock */ = {
+		CEB9431455C293FFAFA59FB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Cryptext-checkManifestLockResult.txt",
 			);
@@ -183,23 +258,37 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		702C97E5C37BA945760DF72E /* [CP] Embed Pods Frameworks */ = {
+		DB8BF612B22951ED6C0E794A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Cryptext/Pods-Cryptext-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,30 +299,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AFE27E172271F3C800C33CDD /* Sources */ = {
+		48AC74BF20A66C2A00AA1788 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE27E212271F3C800C33CDD /* ViewController.swift in Sources */,
-				AFE27E1F2271F3C800C33CDD /* AppDelegate.swift in Sources */,
+				4859775320A68B1C00429CB3 /* ChannelsViewController.swift in Sources */,
+				4859775720A68C6F00429CB3 /* NavigationController.swift in Sources */,
+				4859775520A68BF500429CB3 /* AppController.swift in Sources */,
+				481A352E20A8E956008CD16B /* UICollectionView+Additions.swift in Sources */,
+				4859775020A68AF800429CB3 /* LoginViewController.swift in Sources */,
+				4859775E20A69CD500429CB3 /* UIView+Additions.swift in Sources */,
+				48AC74C720A66C2A00AA1788 /* AppDelegate.swift in Sources */,
+				4859776420A7A1BD00429CB3 /* DatabaseRepresentation.swift in Sources */,
+				4859774D20A689C700429CB3 /* AppSettings.swift in Sources */,
+				4859776820A7D34400429CB3 /* Message.swift in Sources */,
+				4859776020A7993F00429CB3 /* Channel.swift in Sources */,
+				4859776620A7AD3800429CB3 /* ChatViewController.swift in Sources */,
+				4859775A20A68CAC00429CB3 /* UIColor+Additions.swift in Sources */,
+				481A352C20A8E6DC008CD16B /* UIImage+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AFE27E222271F3C800C33CDD /* Main.storyboard */ = {
+		48AC74CF20A66C2C00AA1788 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AFE27E232271F3C800C33CDD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AFE27E272271F3CA00C33CDD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AFE27E282271F3CA00C33CDD /* Base */,
+				48AC74D020A66C2C00AA1788 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -241,7 +334,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AFE27E2B2271F3CA00C33CDD /* Debug */ = {
+		48AC74D320A66C2C00AA1788 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,9 +385,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -302,7 +394,7 @@
 			};
 			name = Debug;
 		};
-		AFE27E2C2271F3CA00C33CDD /* Release */ = {
+		48AC74D420A66C2C00AA1788 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -347,9 +439,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -357,66 +448,68 @@
 			};
 			name = Release;
 		};
-		AFE27E2E2271F3CA00C33CDD /* Debug */ = {
+		48AC74D620A66C2C00AA1788 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 118DEB8C7872420C8CD175BB /* Pods-Cryptext.debug.xcconfig */;
+			baseConfigurationReference = 5931E1A01874AC5A09FB7B2F /* Pods-Cryptext.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76P7BJ385R;
-				INFOPLIST_FILE = Cryptext/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Cryptext/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.arham4.Cryptext;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.arham4.cryptext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		AFE27E2F2271F3CA00C33CDD /* Release */ = {
+		48AC74D720A66C2C00AA1788 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6B47652C8B4A3511D9829CE /* Pods-Cryptext.release.xcconfig */;
+			baseConfigurationReference = 839AB40B33A00B447102F67D /* Pods-Cryptext.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76P7BJ385R;
-				INFOPLIST_FILE = Cryptext/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Cryptext/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.arham4.Cryptext;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.arham4.cryptext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFE27E162271F3C800C33CDD /* Build configuration list for PBXProject "Cryptext" */ = {
+		48AC74BE20A66C2A00AA1788 /* Build configuration list for PBXProject "Cryptext" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFE27E2B2271F3CA00C33CDD /* Debug */,
-				AFE27E2C2271F3CA00C33CDD /* Release */,
+				48AC74D320A66C2C00AA1788 /* Debug */,
+				48AC74D420A66C2C00AA1788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFE27E2D2271F3CA00C33CDD /* Build configuration list for PBXNativeTarget "Cryptext" */ = {
+		48AC74D520A66C2C00AA1788 /* Build configuration list for PBXNativeTarget "Cryptext" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AFE27E2E2271F3CA00C33CDD /* Debug */,
-				AFE27E2F2271F3CA00C33CDD /* Release */,
+				48AC74D620A66C2C00AA1788 /* Debug */,
+				48AC74D720A66C2C00AA1788 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AFE27E132271F3C800C33CDD /* Project object */;
+	rootObject = 48AC74BB20A66C2A00AA1788 /* Project object */;
 }

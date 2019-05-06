@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Cryptext.xcodeproj">
+      location = "group:/Users/142817/Downloads/Cryptext/Cryptext.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Cryptext.xcodeproj">
    </FileRef>
 </Workspace>
