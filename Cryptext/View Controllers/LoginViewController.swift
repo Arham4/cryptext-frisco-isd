@@ -32,9 +32,10 @@ import FirebaseAuth
 class LoginViewController: UIViewController {
   
   @IBOutlet var actionButton: UIButton!
-  @IBOutlet var fieldBackingView: UIView!
+  //@IBOutlet var fieldBackingView: UIView!
   @IBOutlet var displayNameField: UITextField!
-  @IBOutlet var actionButtonBackingView: UIView!
+  @IBOutlet var passwordField: UITextField!
+  //@IBOutlet var actionButtonBackingView: UIView!
   @IBOutlet var bottomConstraint: NSLayoutConstraint!
   
   override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -44,8 +45,8 @@ class LoginViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    fieldBackingView.smoothRoundCorners(to: 8)
-    actionButtonBackingView.smoothRoundCorners(to: actionButtonBackingView.bounds.height / 2)
+    //fieldBackingView.smoothRoundCorners(to: 8)
+    //actionButtonBackingView.smoothRoundCorners(to: actionButtonBackingView.bounds.height / 2)
     
     displayNameField.tintColor = .primary
     displayNameField.addTarget(
@@ -99,11 +100,18 @@ class LoginViewController: UIViewController {
     displayNameField.resignFirstResponder()
     
     AppSettings.displayName = name
-    Auth.auth().signInAnonymously(completion: nil)
+    Auth.auth().signIn(withEmail: "\(displayNameField.text!)@abc123.com", password: passwordField.text!) { [weak self] user, error in
+      guard let strongSelf = self else {
+        print("not valid?")
+        return
+      }
+      print("hmm")
+    }
+    //Auth.auth().signInAnonymously(completion: nil)
   }
   
   private func showMissingNameAlert() {
-    let ac = UIAlertController(title: "Display Name Required", message: "Please enter a display name.", preferredStyle: .alert)
+    let ac = UIAlertController(title: "Username Required", message: "Please enter a username.", preferredStyle: .alert)
     ac.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
       DispatchQueue.main.async {
         self.displayNameField.becomeFirstResponder()
