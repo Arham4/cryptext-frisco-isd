@@ -25,6 +25,7 @@
 		48AC74C720A66C2A00AA1788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AC74C620A66C2A00AA1788 /* AppDelegate.swift */; };
 		48AC74CE20A66C2C00AA1788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48AC74CD20A66C2C00AA1788 /* Assets.xcassets */; };
 		48AC74D120A66C2C00AA1788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48AC74CF20A66C2C00AA1788 /* LaunchScreen.storyboard */; };
+		AFDE746B228DB03C00EF4012 /* PasswordExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDE746A228DB03C00EF4012 /* PasswordExtensions.swift */; };
 		AFE761AC227B2BEF008128FE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFE761AB227B2BEF008128FE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		5931E1A01874AC5A09FB7B2F /* Pods-Cryptext.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptext.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cryptext/Pods-Cryptext.debug.xcconfig"; sourceTree = "<group>"; };
 		839AB40B33A00B447102F67D /* Pods-Cryptext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cryptext.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cryptext/Pods-Cryptext.release.xcconfig"; sourceTree = "<group>"; };
 		8E166ABAFB310D780AD251B0 /* Pods_Cryptext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cryptext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDE746A228DB03C00EF4012 /* PasswordExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordExtensions.swift; sourceTree = "<group>"; };
 		AFE761AB227B2BEF008128FE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				4859775F20A7993F00429CB3 /* Channel.swift */,
 				4859776320A7A1BD00429CB3 /* DatabaseRepresentation.swift */,
 				4859776720A7D34400429CB3 /* Message.swift */,
+				AFDE746A228DB03C00EF4012 /* PasswordExtensions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				4859774D20A689C700429CB3 /* AppSettings.swift in Sources */,
 				4859776820A7D34400429CB3 /* Message.swift in Sources */,
 				4859776020A7993F00429CB3 /* Channel.swift in Sources */,
+				AFDE746B228DB03C00EF4012 /* PasswordExtensions.swift in Sources */,
 				4859776620A7AD3800429CB3 /* ChatViewController.swift in Sources */,
 				4859775A20A68CAC00429CB3 /* UIColor+Additions.swift in Sources */,
 				481A352C20A8E6DC008CD16B /* UIImage+Additions.swift in Sources */,

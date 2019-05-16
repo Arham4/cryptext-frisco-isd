@@ -28,6 +28,8 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
+import FirebaseFirestore
 
 class LoginViewController: UIViewController {
   
@@ -91,27 +93,66 @@ class LoginViewController: UIViewController {
     )
   }
   
+  
+  
   private func signIn() {
+    
     guard let name = displayNameField.text, !name.isEmpty else {
       showMissingNameAlert()
+      return
+    }
+    guard let password = passwordField.text, password.isValid() else {
+      showIncorrectPasswordAlert()
       return
     }
     
     displayNameField.resignFirstResponder()
     
     AppSettings.displayName = name
-    Auth.auth().signIn(withEmail: "\(displayNameField.text!)@abc123.com", password: passwordField.text!) { [weak self] user, error in
-      guard let strongSelf = self else {
-        print("not valid?")
-        return
+    
+    /*let databaseRef = Firestore.firestore().collection("users")
+    let userPotentialReference = databaseRef.document("\(self.displayNameField.text!)@abc123.com")
+    userPotentialReference.getDocument { (document, error) in
+      if let document = document, document.exists {
+        let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+        print("exists \(dataDescription)")
+      } else {
+        print("doesn't exist")
       }
-      print("hmm")
+    }*/
+    
+    let auth = Auth.auth()
+    
+    auth.signIn(withEmail: "\(name)@abc123.com", password: passwordField.text!) { user, error in
+      if let errorCode = AuthErrorCode(rawValue: error!._code) {
+        switch errorCode {
+        case .wrongPassword:
+          self.showIncorrectPasswordAlert()
+          return
+          
+        case .userNotFound:
+          auth.createUser(withEmail: "\(name)@abc123.com", password: self.passwordField.text!) { user, error in
+            auth.signIn(withEmail: "\(name)@abc123.com", password: self.passwordField.text!)
+            print("signed \(auth.currentUser!.uid)")
+          }
+          
+        default:
+          auth.signIn(withEmail: "\(name)@abc123.com", password: self.passwordField.text!)
+        }
+      }
     }
-    //Auth.auth().signInAnonymously(completion: nil)
   }
   
   private func showMissingNameAlert() {
-    let ac = UIAlertController(title: "Username Required", message: "Please enter a username.", preferredStyle: .alert)
+    showAlert(title: "Username Required", message: "Please enter a username.")
+  }
+  
+  private func showIncorrectPasswordAlert() {
+    showAlert(title: "Password Invalid", message: "Please enter a password that is 6 characters or longer")
+  }
+  
+  private func showAlert(title: String, message: String) {
+    let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
     ac.addAction(UIAlertAction(title: "Okay", style: .default, handler: { _ in
       DispatchQueue.main.async {
         self.displayNameField.becomeFirstResponder()
