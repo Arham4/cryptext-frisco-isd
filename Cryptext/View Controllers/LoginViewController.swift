@@ -53,8 +53,13 @@ class LoginViewController: UIViewController {
     displayNameField.tintColor = .primary
     displayNameField.addTarget(
       self,
-      action: #selector(textFieldDidReturn),
+      action: #selector(goToPasswordField),
       for: .primaryActionTriggered
+    )
+    
+    passwordField.addTarget(self,
+                            action: #selector(textFieldDidReturn),
+                            for: .primaryActionTriggered
     )
     
     registerForKeyboardNotifications()
@@ -70,6 +75,10 @@ class LoginViewController: UIViewController {
   
   @IBAction func actionButtonPressed() {
     signIn()
+  }
+  
+  @objc private func goToPasswordField() {
+    passwordField.becomeFirstResponder()
   }
   
   @objc private func textFieldDidReturn() {
@@ -110,17 +119,6 @@ class LoginViewController: UIViewController {
     
     AppSettings.displayName = name
     
-    /*let databaseRef = Firestore.firestore().collection("users")
-    let userPotentialReference = databaseRef.document("\(self.displayNameField.text!)@abc123.com")
-    userPotentialReference.getDocument { (document, error) in
-      if let document = document, document.exists {
-        let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-        print("exists \(dataDescription)")
-      } else {
-        print("doesn't exist")
-      }
-    }*/
-    
     let auth = Auth.auth()
     
     auth.signIn(withEmail: "\(name)@abc123.com", password: passwordField.text!) { user, error in
@@ -135,9 +133,11 @@ class LoginViewController: UIViewController {
             auth.signIn(withEmail: "\(name)@abc123.com", password: self.passwordField.text!)
             print("signed \(auth.currentUser!.uid)")
           }
+          return
           
         default:
           auth.signIn(withEmail: "\(name)@abc123.com", password: self.passwordField.text!)
+          return
         }
       }
     }

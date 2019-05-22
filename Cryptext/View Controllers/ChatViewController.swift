@@ -41,7 +41,7 @@ final class ChatViewController: MessagesViewController {
   private var messageListener: ListenerRegistration?
   
   deinit {
-      messageListener?.remove()
+    messageListener?.remove()
   }
   
   init(user: User, channel: Channel) {
@@ -50,6 +50,15 @@ final class ChatViewController: MessagesViewController {
     super.init(nibName: nil, bundle: nil)
     
     title = channel.name
+  }
+  
+  override func viewDidDisappear(_ animated: Bool) {
+    messages = []
+    reference?.getDocuments() { (snapshot, error) in
+      for document in snapshot!.documents {
+        self.reference?.document(document.documentID).delete()
+      }
+    }
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -141,6 +150,7 @@ extension ChatViewController: MessagesDisplayDelegate {
   }
   
   private func save(_ message: Message) {
+    
     reference?.addDocument(data: message.representation) { error in
       if let e = error {
         print("Error sending message: \(e.localizedDescription)")

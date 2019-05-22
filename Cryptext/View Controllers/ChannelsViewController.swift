@@ -168,6 +168,7 @@ class ChannelsViewController: UITableViewController {
     }
     
     let channel = Channel(name: channelName)
+    //addChannelToTable(channel)
     channelReference.addDocument(data: channel.representation) { error in
       if let e = error {
         print("Error saving channel: \(e.localizedDescription)")
