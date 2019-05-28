@@ -7,5 +7,4 @@ Cryptext is a self-destructing messaging service that ensures end-to-end encrypt
 
 ## How we built it
 
-Google Firebase was used to relay messages and store user logins using email authentication. End-to-end encryption was
-accomplished using RSA encryption.
+The app uses RSA encryption to allow for end-to-end security along with Firebase for communication between both endpoints. The Firestore database only stores the information for the duration of time needed for the transaction between both users. The messages are not even stored locally. This is all made to make a messaging platform where users can rest assured no information can be leaked.
